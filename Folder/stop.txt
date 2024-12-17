@@ -1,0 +1,140 @@
+Grid | Bus Stops
+E8 | Alakapuri Convention Centre
+A7 | Ambalamukku
+A12 | Ambalathumukku
+E2 | Anadiyil Hospital
+18 | Ananthapuri Auditorium
+H9 | Arayalloor
+16 | Aristo
+K5 | Attakulangara
+15 | Ayurveda College
+G6 | Bakery Jn.
+H7 | Bharat Bhavan
+E1 | Burma Road
+H5 | Cantonment Gate
+19 | Chengalloor - HLL
+J7 | Chenthitta
+14 | Chettikulangara Sreedevi Temple
+J7 | Choorakattu Palayam
+C6 | Devaswom Board
+E6 | Directorate of SC Development
+K5 | East Fort
+F8 | Edapazhanji Pangode Fish Market
+G7 | Easwara Vilasam - Cotton Hill
+G9 | Elippode
+G9 | Elippode Market
+A2 | FCI
+G7 | Forest Head Quarters
+E9 | Forest Office - PTP Nagar
+DG4 | General Hospital
+J3 | Fort Hospital
+16 | Govt. Arts College
+G3 | Govt. Eye Hospital
+C1 | Govt. Medical College
+D1 | Govt. Medical College H S S
+E2 | Gowreesha Hospital
+H8 | Jagathy
+H8 | Jagathy - Govt. High School
+A6 | Jala Vijnana Bhavan
+F1 | John Cox College
+K8 | Kailas Jn.
+D7 | Kanakakunnu
+F1 | Kannammoola
+F1 | Kannammoola Bridge
+18 | Kannettumukku
+K8 | Karamana
+K7 | Karamana - PRS
+K6 | Killipalam
+E1 | Koyikkal Lane
+F4 | Kerala University
+A3 | Kesavadasapuram
+B7 | Kowdiar
+K4 | KSRTC Transport Bhavan
+D1 | Kumarapuram
+J8 | Kunjalummoodu
+14 | Kunnumpuram Jn.
+B6 | Kuravankonam
+B6 | Kuravankonam - St. Thomas Church
+E3 | Law College Jn.
+D5 | LMS C
+E5 | LMS Corporation Office
+D7 | Manaveeyam Road
+B4 | Marappalam
+E9 | Maruthankuzhi
+17 | Mettukada
+A3 | MG College
+F2 | Miranda
+H6 | Model School
+E2 | Mulavana
+C1 | Murinjapalam
+D6 | Museum
+A5 | Muttada
+A4 | Muttada - St. Joseph School
+C6 | Nanthancode
+C6 | Nanthancode - Rajeev Lane
+E6 | Nanthavanam Camp
+B7 | Narmada - Toll Jn.
+F9 | Nirmithi Kendram
+E4 | Niyamasabha
+H7 | Norka Roots
+B8 | Oolampara - HLL Lifecare Ltd.
+B8 | Oolampara - Mental Health Centre
+15 | Overbridge
+E9 | Padayani Road
+K3 | Padinjare Nada
+F5 | Palayam
+H6 | Panavila
+J9 | Pareeksha Bhavan
+A3 | Paruthippara
+B3 | Pattom
+B3 | Pattom - LIC
+B3 | Pattom St. Mary's HSS
+H3 | Pattoor
+A8 | Peroorkada - Thankamma Stadium
+A8 | Peroorkada Depot
+A8 | Peroorkada Jn.
+H1 | Pettah - Pallimukku
+C8 | Paippinmoodu
+C8 | Paippinmoodu Park
+D4 | Plamoodu
+D4 | PMG
+E7 | Police Headquarters
+17 | Police Training College
+19 | Poojappura
+D2 | Pottakkuzhy
+E9 | PTP Nagar
+D7 | Raj Bhavan
+19 | Rotary
+A6 | Santhwana Jn.
+C8 | SAP Camp
+D8 | Sasthamangalam
+D8 | Sasthamangalam - Judge Lane
+18 | Shanthi Kavadam
+B6 | SPTPM Govt. UP School
+J4 | Sreekanteswaram Temple
+D9 | Sri Ramakrishna Hospital
+16 | Sri Swathi Thirunal Sangeetha College
+H5 | Statue
+G7 | Survey Directorate
+C8 | Swathi Nagar
+J5 | Thampanoor Co
+H9 | Thirumala
+H9 | Thirumala - Pallimukku
+K7 | Thycaud Hospital
+C7 | TTC
+A1 | Ulloor
+13 | Uppidamoodu Bridge
+J7 | Valiyasala - Mahadeva Temple
+G9 | Valiyavila
+H3 | Vanchiyoor Court
+A6 | Vayalikada
+K3 | Vazhappally
+G7 | Vazhuthacaud Kalabhavan Theatre
+H7 | Vazhuthacaud Womens College
+D7 | Vellayambalam
+F9 | Vettamukku
+19 | Vijayamohini Mill
+E3 | Vikas Bhavan Depot
+G4 | VJT CO
+C2 | Vydyuthi Bhavan
+

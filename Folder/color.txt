@@ -1,0 +1,139 @@
+|Color 
+V, Br
+M, Y, V
+G
+G
+Br
+Br
+B
+Br
+R, B, G
+B, V
+R
+G
+V
+Br
+Br
+B
+Br
+Y
+B
+R, B, Br, G
+V
+V, Br
+Br
+Br
+Y
+R
+Br
+G
+B
+R
+B
+Y, G
+G
+G
+Br
+Br
+M
+G
+Br
+R, M, V
+G
+G
+Br
+Br
+Br
+R, B, V
+M, Y
+Br
+Y, V
+G
+G
+G
+Br
+B
+Y
+Y
+G
+R, B, M, Y, V, G
+B, G
+R
+Y
+Br
+R
+M
+G
+B
+G
+Y,G
+R,B,M,Y,N
+M
+M
+Y
+Y
+B
+Y, V
+Br
+R, B, V
+R
+M
+M
+R,B,G
+Br
+G
+R,B,V,G
+B
+Br
+M
+M, Y
+M, Y
+M, Y
+B
+M, Y, V
+M, Y, V
+M, Y, V
+G
+M
+M
+M,Y
+R, B, M, Y, V, G
+R
+R
+Br
+G
+Br
+V
+Br
+M
+M
+M, Br, V
+M, V
+Br
+Y
+G
+Br
+R
+R,G,V
+V
+M
+R, B, Br, G
+Br
+Br
+R
+Y,V
+Y
+R, G
+Br
+Br
+B
+M
+G
+R,V
+R,V
+M,V,R
+Br
+Br
+R,B,V,G
+R,B,V
+Y

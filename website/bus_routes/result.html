@@ -1,0 +1,19 @@
+<!-- templates/bus_routes/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Route Result</title>
+</head>
+<body>
+    <h1>Best Route</h1>
+    {% if path %}
+        <p><strong>Best Route:</strong> {{ path|join:" -> " }}</p>
+        <p><strong>Number of Line Changes:</strong> {{ color_changes }}</p>
+        <p><strong>Route Colors Taken:</strong> {{ route_colors|join:" -> " }}</p>
+    {% else %}
+        <p>Error: No valid path found!</p>
+    {% endif %}
+    <a href="/">Go back</a>
+</body>
+</html>

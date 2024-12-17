@@ -1,0 +1,29 @@
+<!-- templates/bus_routes/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bus Route Planner</title>
+</head>
+<body>
+    <h1>Bus Route Planner</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <label for="start_stop">Start Stop:</label>
+        <select name="start_stop" id="start_stop">
+            {% for stop in stops %}
+                <option value="{{ stop }}">{{ stop }}</option>
+            {% endfor %}
+        </select>
+
+        <label for="end_stop">End Stop:</label>
+        <select name="end_stop" id="end_stop">
+            {% for stop in stops %}
+                <option value="{{ stop }}">{{ stop }}</option>
+            {% endfor %}
+        </select>
+
+        <button type="submit">Find Route</button>
+    </form>
+</body>
+</html>

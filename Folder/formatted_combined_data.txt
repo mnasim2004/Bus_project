@@ -1,0 +1,835 @@
+{ "1": {
+    "Grid": "Grid",
+    "Stop": "Bus Stops",
+    "Colors": {'|Color'}
+},
+
+"2": {
+    "Grid": "E8",
+    "Stop": "Alakapuri Convention Centre",
+    "Colors": {'V', 'Br'}
+},
+
+"3": {
+    "Grid": "A7",
+    "Stop": "Ambalamukku",
+    "Colors": {'M', 'Y', 'V'}
+},
+
+"4": {
+    "Grid": "A12",
+    "Stop": "Ambalathumukku",
+    "Colors": {'G'}
+},
+
+"5": {
+    "Grid": "E2",
+    "Stop": "Anadiyil Hospital",
+    "Colors": {'G'}
+},
+
+"6": {
+    "Grid": "18",
+    "Stop": "Ananthapuri Auditorium",
+    "Colors": {'Br'}
+},
+
+"7": {
+    "Grid": "H9",
+    "Stop": "Arayalloor",
+    "Colors": {'Br'}
+},
+
+"8": {
+    "Grid": "16",
+    "Stop": "Aristo",
+    "Colors": {'B'}
+},
+
+"9": {
+    "Grid": "K5",
+    "Stop": "Attakulangara",
+    "Colors": {'Br'}
+},
+
+"10": {
+    "Grid": "15",
+    "Stop": "Ayurveda College",
+    "Colors": {'G', 'B', 'R'}
+},
+
+"11": {
+    "Grid": "G6",
+    "Stop": "Bakery Jn.",
+    "Colors": {'B', 'V'}
+},
+
+"12": {
+    "Grid": "H7",
+    "Stop": "Bharat Bhavan",
+    "Colors": {'R'}
+},
+
+"13": {
+    "Grid": "E1",
+    "Stop": "Burma Road",
+    "Colors": {'G'}
+},
+
+"14": {
+    "Grid": "H5",
+    "Stop": "Cantonment Gate",
+    "Colors": {'V'}
+},
+
+"15": {
+    "Grid": "19",
+    "Stop": "Chengalloor - HLL",
+    "Colors": {'Br'}
+},
+
+"16": {
+    "Grid": "J7",
+    "Stop": "Chenthitta",
+    "Colors": {'Br'}
+},
+
+"17": {
+    "Grid": "14",
+    "Stop": "Chettikulangara Sreedevi Temple",
+    "Colors": {'B'}
+},
+
+"18": {
+    "Grid": "J7",
+    "Stop": "Choorakattu Palayam",
+    "Colors": {'Br'}
+},
+
+"19": {
+    "Grid": "C6",
+    "Stop": "Devaswom Board",
+    "Colors": {'Y'}
+},
+
+"20": {
+    "Grid": "E6",
+    "Stop": "Directorate of SC Development",
+    "Colors": {'B'}
+},
+
+"21": {
+    "Grid": "K5",
+    "Stop": "East Fort",
+    "Colors": {'G', 'B', 'Br', 'R'}
+},
+
+"22": {
+    "Grid": "F8",
+    "Stop": "Edapazhanji Pangode Fish Market",
+    "Colors": {'V'}
+},
+
+"23": {
+    "Grid": "G7",
+    "Stop": "Easwara Vilasam - Cotton Hill",
+    "Colors": {'V', 'Br'}
+},
+
+"24": {
+    "Grid": "G9",
+    "Stop": "Elippode",
+    "Colors": {'Br'}
+},
+
+"25": {
+    "Grid": "G9",
+    "Stop": "Elippode Market",
+    "Colors": {'Br'}
+},
+
+"26": {
+    "Grid": "A2",
+    "Stop": "FCI",
+    "Colors": {'Y'}
+},
+
+"27": {
+    "Grid": "G7",
+    "Stop": "Forest Head Quarters",
+    "Colors": {'R'}
+},
+
+"28": {
+    "Grid": "E9",
+    "Stop": "Forest Office - PTP Nagar",
+    "Colors": {'Br'}
+},
+
+"29": {
+    "Grid": "DG4",
+    "Stop": "General Hospital",
+    "Colors": {'G'}
+},
+
+"30": {
+    "Grid": "J3",
+    "Stop": "Fort Hospital",
+    "Colors": {'B'}
+},
+
+"31": {
+    "Grid": "16",
+    "Stop": "Govt. Arts College",
+    "Colors": {'R'}
+},
+
+"32": {
+    "Grid": "G3",
+    "Stop": "Govt. Eye Hospital",
+    "Colors": {'B'}
+},
+
+"33": {
+    "Grid": "C1",
+    "Stop": "Govt. Medical College",
+    "Colors": {'G', 'Y'}
+},
+
+"34": {
+    "Grid": "D1",
+    "Stop": "Govt. Medical College H S S",
+    "Colors": {'G'}
+},
+
+"35": {
+    "Grid": "E2",
+    "Stop": "Gowreesha Hospital",
+    "Colors": {'G'}
+},
+
+"36": {
+    "Grid": "H8",
+    "Stop": "Jagathy",
+    "Colors": {'Br'}
+},
+
+"37": {
+    "Grid": "H8",
+    "Stop": "Jagathy - Govt. High School",
+    "Colors": {'Br'}
+},
+
+"38": {
+    "Grid": "A6",
+    "Stop": "Jala Vijnana Bhavan",
+    "Colors": {'M'}
+},
+
+"39": {
+    "Grid": "F1",
+    "Stop": "John Cox College",
+    "Colors": {'G'}
+},
+
+"40": {
+    "Grid": "K8",
+    "Stop": "Kailas Jn.",
+    "Colors": {'Br'}
+},
+
+"41": {
+    "Grid": "D7",
+    "Stop": "Kanakakunnu",
+    "Colors": {'M', 'V', 'R'}
+},
+
+"42": {
+    "Grid": "F1",
+    "Stop": "Kannammoola",
+    "Colors": {'G'}
+},
+
+"43": {
+    "Grid": "F1",
+    "Stop": "Kannammoola Bridge",
+    "Colors": {'G'}
+},
+
+"44": {
+    "Grid": "18",
+    "Stop": "Kannettumukku",
+    "Colors": {'Br'}
+},
+
+"45": {
+    "Grid": "K8",
+    "Stop": "Karamana",
+    "Colors": {'Br'}
+},
+
+"46": {
+    "Grid": "K7",
+    "Stop": "Karamana - PRS",
+    "Colors": {'Br'}
+},
+
+"47": {
+    "Grid": "K6",
+    "Stop": "Killipalam",
+    "Colors": {'B', 'V', 'R'}
+},
+
+"48": {
+    "Grid": "E1",
+    "Stop": "Koyikkal Lane",
+    "Colors": {'M', 'Y'}
+},
+
+"49": {
+    "Grid": "F4",
+    "Stop": "Kerala University",
+    "Colors": {'Br'}
+},
+
+"50": {
+    "Grid": "A3",
+    "Stop": "Kesavadasapuram",
+    "Colors": {'Y', 'V'}
+},
+
+"51": {
+    "Grid": "B7",
+    "Stop": "Kowdiar",
+    "Colors": {'G'}
+},
+
+"52": {
+    "Grid": "K4",
+    "Stop": "KSRTC Transport Bhavan",
+    "Colors": {'G'}
+},
+
+"53": {
+    "Grid": "D1",
+    "Stop": "Kumarapuram",
+    "Colors": {'G'}
+},
+
+"54": {
+    "Grid": "J8",
+    "Stop": "Kunjalummoodu",
+    "Colors": {'Br'}
+},
+
+"55": {
+    "Grid": "14",
+    "Stop": "Kunnumpuram Jn.",
+    "Colors": {'B'}
+},
+
+"56": {
+    "Grid": "B6",
+    "Stop": "Kuravankonam",
+    "Colors": {'Y'}
+},
+
+"57": {
+    "Grid": "B6",
+    "Stop": "Kuravankonam - St. Thomas Church",
+    "Colors": {'Y'}
+},
+
+"58": {
+    "Grid": "E3",
+    "Stop": "Law College Jn.",
+    "Colors": {'G'}
+},
+
+"59": {
+    "Grid": "D5",
+    "Stop": "LMS C",
+    "Colors": {'M', 'B', 'Y', 'V', 'G', 'R'}
+},
+
+"60": {
+    "Grid": "E5",
+    "Stop": "LMS Corporation Office",
+    "Colors": {'G', 'B'}
+},
+
+"61": {
+    "Grid": "D7",
+    "Stop": "Manaveeyam Road",
+    "Colors": {'R'}
+},
+
+"62": {
+    "Grid": "B4",
+    "Stop": "Marappalam",
+    "Colors": {'Y'}
+},
+
+"63": {
+    "Grid": "E9",
+    "Stop": "Maruthankuzhi",
+    "Colors": {'Br'}
+},
+
+"64": {
+    "Grid": "17",
+    "Stop": "Mettukada",
+    "Colors": {'R'}
+},
+
+"65": {
+    "Grid": "A3",
+    "Stop": "MG College",
+    "Colors": {'M'}
+},
+
+"66": {
+    "Grid": "F2",
+    "Stop": "Miranda",
+    "Colors": {'G'}
+},
+
+"67": {
+    "Grid": "H6",
+    "Stop": "Model School",
+    "Colors": {'B'}
+},
+
+"68": {
+    "Grid": "E2",
+    "Stop": "Mulavana",
+    "Colors": {'G'}
+},
+
+"69": {
+    "Grid": "C1",
+    "Stop": "Murinjapalam",
+    "Colors": {'G', 'Y'}
+},
+
+"70": {
+    "Grid": "D6",
+    "Stop": "Museum",
+    "Colors": {'M', 'B', 'Y', 'N', 'R'}
+},
+
+"71": {
+    "Grid": "A5",
+    "Stop": "Muttada",
+    "Colors": {'M'}
+},
+
+"72": {
+    "Grid": "A4",
+    "Stop": "Muttada - St. Joseph School",
+    "Colors": {'M'}
+},
+
+"73": {
+    "Grid": "C6",
+    "Stop": "Nanthancode",
+    "Colors": {'Y'}
+},
+
+"74": {
+    "Grid": "C6",
+    "Stop": "Nanthancode - Rajeev Lane",
+    "Colors": {'Y'}
+},
+
+"75": {
+    "Grid": "E6",
+    "Stop": "Nanthavanam Camp",
+    "Colors": {'B'}
+},
+
+"76": {
+    "Grid": "B7",
+    "Stop": "Narmada - Toll Jn.",
+    "Colors": {'Y', 'V'}
+},
+
+"77": {
+    "Grid": "F9",
+    "Stop": "Nirmithi Kendram",
+    "Colors": {'Br'}
+},
+
+"78": {
+    "Grid": "E4",
+    "Stop": "Niyamasabha",
+    "Colors": {'B', 'V', 'R'}
+},
+
+"79": {
+    "Grid": "H7",
+    "Stop": "Norka Roots",
+    "Colors": {'R'}
+},
+
+"80": {
+    "Grid": "B8",
+    "Stop": "Oolampara - HLL Lifecare Ltd.",
+    "Colors": {'M'}
+},
+
+"81": {
+    "Grid": "B8",
+    "Stop": "Oolampara - Mental Health Centre",
+    "Colors": {'M'}
+},
+
+"82": {
+    "Grid": "15",
+    "Stop": "Overbridge",
+    "Colors": {'G', 'B', 'R'}
+},
+
+"83": {
+    "Grid": "E9",
+    "Stop": "Padayani Road",
+    "Colors": {'Br'}
+},
+
+"84": {
+    "Grid": "K3",
+    "Stop": "Padinjare Nada",
+    "Colors": {'G'}
+},
+
+"85": {
+    "Grid": "F5",
+    "Stop": "Palayam",
+    "Colors": {'G', 'B', 'V', 'R'}
+},
+
+"86": {
+    "Grid": "H6",
+    "Stop": "Panavila",
+    "Colors": {'B'}
+},
+
+"87": {
+    "Grid": "J9",
+    "Stop": "Pareeksha Bhavan",
+    "Colors": {'Br'}
+},
+
+"88": {
+    "Grid": "A3",
+    "Stop": "Paruthippara",
+    "Colors": {'M'}
+},
+
+"89": {
+    "Grid": "B3",
+    "Stop": "Pattom",
+    "Colors": {'M', 'Y'}
+},
+
+"90": {
+    "Grid": "B3",
+    "Stop": "Pattom - LIC",
+    "Colors": {'M', 'Y'}
+},
+
+"91": {
+    "Grid": "B3",
+    "Stop": "Pattom St. Mary's HSS",
+    "Colors": {'M', 'Y'}
+},
+
+"92": {
+    "Grid": "H3",
+    "Stop": "Pattoor",
+    "Colors": {'B'}
+},
+
+"93": {
+    "Grid": "A8",
+    "Stop": "Peroorkada - Thankamma Stadium",
+    "Colors": {'M', 'Y', 'V'}
+},
+
+"94": {
+    "Grid": "A8",
+    "Stop": "Peroorkada Depot",
+    "Colors": {'M', 'Y', 'V'}
+},
+
+"95": {
+    "Grid": "A8",
+    "Stop": "Peroorkada Jn.",
+    "Colors": {'M', 'Y', 'V'}
+},
+
+"96": {
+    "Grid": "H1",
+    "Stop": "Pettah - Pallimukku",
+    "Colors": {'G'}
+},
+
+"97": {
+    "Grid": "C8",
+    "Stop": "Paippinmoodu",
+    "Colors": {'M'}
+},
+
+"98": {
+    "Grid": "C8",
+    "Stop": "Paippinmoodu Park",
+    "Colors": {'M'}
+},
+
+"99": {
+    "Grid": "D4",
+    "Stop": "Plamoodu",
+    "Colors": {'M', 'Y'}
+},
+
+"100": {
+    "Grid": "D4",
+    "Stop": "PMG",
+    "Colors": {'M', 'B', 'Y', 'V', 'G', 'R'}
+},
+
+"101": {
+    "Grid": "E7",
+    "Stop": "Police Headquarters",
+    "Colors": {'R'}
+},
+
+"102": {
+    "Grid": "17",
+    "Stop": "Police Training College",
+    "Colors": {'R'}
+},
+
+"103": {
+    "Grid": "19",
+    "Stop": "Poojappura",
+    "Colors": {'Br'}
+},
+
+"104": {
+    "Grid": "D2",
+    "Stop": "Pottakkuzhy",
+    "Colors": {'G'}
+},
+
+"105": {
+    "Grid": "E9",
+    "Stop": "PTP Nagar",
+    "Colors": {'Br'}
+},
+
+"106": {
+    "Grid": "D7",
+    "Stop": "Raj Bhavan",
+    "Colors": {'V'}
+},
+
+"107": {
+    "Grid": "19",
+    "Stop": "Rotary",
+    "Colors": {'Br'}
+},
+
+"108": {
+    "Grid": "A6",
+    "Stop": "Santhwana Jn.",
+    "Colors": {'M'}
+},
+
+"109": {
+    "Grid": "C8",
+    "Stop": "SAP Camp",
+    "Colors": {'M'}
+},
+
+"110": {
+    "Grid": "D8",
+    "Stop": "Sasthamangalam",
+    "Colors": {'M', 'V', 'Br'}
+},
+
+"111": {
+    "Grid": "D8",
+    "Stop": "Sasthamangalam - Judge Lane",
+    "Colors": {'M', 'V'}
+},
+
+"112": {
+    "Grid": "18",
+    "Stop": "Shanthi Kavadam",
+    "Colors": {'Br'}
+},
+
+"113": {
+    "Grid": "B6",
+    "Stop": "SPTPM Govt. UP School",
+    "Colors": {'Y'}
+},
+
+"114": {
+    "Grid": "J4",
+    "Stop": "Sreekanteswaram Temple",
+    "Colors": {'G'}
+},
+
+"115": {
+    "Grid": "D9",
+    "Stop": "Sri Ramakrishna Hospital",
+    "Colors": {'Br'}
+},
+
+"116": {
+    "Grid": "16",
+    "Stop": "Sri Swathi Thirunal Sangeetha College",
+    "Colors": {'R'}
+},
+
+"117": {
+    "Grid": "H5",
+    "Stop": "Statue",
+    "Colors": {'G', 'V', 'R'}
+},
+
+"118": {
+    "Grid": "G7",
+    "Stop": "Survey Directorate",
+    "Colors": {'V'}
+},
+
+"119": {
+    "Grid": "C8",
+    "Stop": "Swathi Nagar",
+    "Colors": {'M'}
+},
+
+"120": {
+    "Grid": "J5",
+    "Stop": "Thampanoor Co",
+    "Colors": {'G', 'B', 'Br', 'R'}
+},
+
+"121": {
+    "Grid": "H9",
+    "Stop": "Thirumala",
+    "Colors": {'Br'}
+},
+
+"122": {
+    "Grid": "H9",
+    "Stop": "Thirumala - Pallimukku",
+    "Colors": {'Br'}
+},
+
+"123": {
+    "Grid": "K7",
+    "Stop": "Thycaud Hospital",
+    "Colors": {'R'}
+},
+
+"124": {
+    "Grid": "C7",
+    "Stop": "TTC",
+    "Colors": {'Y', 'V'}
+},
+
+"125": {
+    "Grid": "A1",
+    "Stop": "Ulloor",
+    "Colors": {'Y'}
+},
+
+"126": {
+    "Grid": "13",
+    "Stop": "Uppidamoodu Bridge",
+    "Colors": {'G', 'R'}
+},
+
+"127": {
+    "Grid": "J7",
+    "Stop": "Valiyasala - Mahadeva Temple",
+    "Colors": {'Br'}
+},
+
+"128": {
+    "Grid": "G9",
+    "Stop": "Valiyavila",
+    "Colors": {'Br'}
+},
+
+"129": {
+    "Grid": "H3",
+    "Stop": "Vanchiyoor Court",
+    "Colors": {'B'}
+},
+
+"130": {
+    "Grid": "A6",
+    "Stop": "Vayalikada",
+    "Colors": {'M'}
+},
+
+"131": {
+    "Grid": "K3",
+    "Stop": "Vazhappally",
+    "Colors": {'G'}
+},
+
+"132": {
+    "Grid": "G7",
+    "Stop": "Vazhuthacaud Kalabhavan Theatre",
+    "Colors": {'V', 'R'}
+},
+
+"133": {
+    "Grid": "H7",
+    "Stop": "Vazhuthacaud Womens College",
+    "Colors": {'V', 'R'}
+},
+
+"134": {
+    "Grid": "D7",
+    "Stop": "Vellayambalam",
+    "Colors": {'M', 'V', 'R'}
+},
+
+"135": {
+    "Grid": "F9",
+    "Stop": "Vettamukku",
+    "Colors": {'Br'}
+},
+
+"136": {
+    "Grid": "19",
+    "Stop": "Vijayamohini Mill",
+    "Colors": {'Br'}
+},
+
+"137": {
+    "Grid": "E3",
+    "Stop": "Vikas Bhavan Depot",
+    "Colors": {'G', 'B', 'V', 'R'}
+},
+
+"138": {
+    "Grid": "G4",
+    "Stop": "VJT CO",
+    "Colors": {'B', 'V', 'R'}
+},
+
+"139": {
+    "Grid": "C2",
+    "Stop": "Vydyuthi Bhavan",
+    "Colors": {'Y'}
+}
+
+ }
