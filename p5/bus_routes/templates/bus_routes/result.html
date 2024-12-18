@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Results</title>
+</head>
+<body>
+    <h1>Route Results</h1>
+
+    <h2>All Available Paths:</h2>
+    <ul>
+        {% for route in paths_with_details %}
+        <li>
+            Path: {{ route.path|join:" -> " }}<br>
+            Total Distance: {{ route.total_distance }}<br>
+            Average Distance: {{ route.avg_distance }}<br>
+            Line Changes: {{ route.line_changes }}
+        </li>
+        {% endfor %}
+    </ul>
+    
+    {% if shortest_path %}
+    <h2>Shortest Path:</h2>
+    <p>{{ shortest_path|join:" -> " }}</p>
+    {% else %}
+    <p>No valid paths found.</p>
+    {% endif %}
+    
+    
+    <a href="/">Go Back</a>
+</body>
+</html>

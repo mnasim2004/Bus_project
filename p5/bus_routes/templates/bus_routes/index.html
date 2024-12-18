@@ -9,21 +9,22 @@
     <h1>Bus Route Planner</h1>
     <form method="POST">
         {% csrf_token %}
-        <label for="start_stop">Start Stop:</label>
-        <select name="start_stop" id="start_stop">
+        <label for="start_stop">Starting Stop:</label>
+        <select id="start_stop" name="start_stop">
             {% for stop in stops %}
-                <option value="{{ stop }}">{{ stop }}</option>
+            <option value="{{ stop }}">{{ stop }}</option>
             {% endfor %}
         </select>
-
-        <label for="end_stop">End Stop:</label>
-        <select name="end_stop" id="end_stop">
+    
+        <label for="end_stop">Ending Stop:</label>
+        <select id="end_stop" name="end_stop">
             {% for stop in stops %}
-                <option value="{{ stop }}">{{ stop }}</option>
+            <option value="{{ stop }}">{{ stop }}</option>
             {% endfor %}
         </select>
-
-        <button type="submit">Find Route</button>
+    
+        <button type="submit">Find Routes</button>
     </form>
+    
 </body>
 </html>

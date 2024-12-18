@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivandrum Stops Map</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <style>
+        #map {
+            height: 500px;
+            width: 70%;
+            display: inline-block;
+        }
+        #sidebar {
+            width: 30%;
+            display: inline-block;
+            padding: 10px;
+            vertical-align: top;
+        }
+        #sidebar h3 {
+            margin-top: 0;
+        }
+        #refresh_button {
+            margin-top: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="sidebar">
+        <h3>Route Information</h3>
+        <p><strong>Distance:</strong> <span id="distance">--</span> km</p>
+        <p><strong>Carbon Footprint:</strong></p>
+        <p><strong>Bus Emissions:</strong> <span id="bus_emissions">--</span> kg CO₂</p>
+        <p><strong>Car Emissions (for same number of passengers):</strong> <span id="car_emissions">--</span> kg CO₂</p>
+        <p><strong>Emissions Saved (by choosing Bus):</strong> <span id="emissions_saved">--</span> kg CO₂</p>
+
+        <label for="num_passengers">Number of passengers in the bus:</label>
+        <input type="number" id="num_passengers" value="1" min="1" onchange="updateCarbonFootprint()">
+        
+        <!-- Refresh Button -->
+        <button id="refresh_button" onclick="resetSelection()">Select New Route</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+    <script>
+        var map = L.map('map').setView([8.5241, 76.9366], 12); // Trivandrum center
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Sample stops data passed from Flask
+        var stops = {{ stops | tojson }};
+        
+        var selectedStops = [];
+        var routeLine = null;  // Variable to store the route line
+
+        // Add stop markers to the map
+        stops.forEach(function(stop) {
+            var marker = L.marker([stop.lat, stop.lng]).addTo(map)
+                .bindPopup(stop.name)
+                .on('click', function() {
+                    selectStop(stop);
+                });
+        });
+
+        // Handle stop selection
+        function selectStop(stop) {
+            if (selectedStops.length < 2) {
+                selectedStops.push(stop);
+                if (selectedStops.length === 2) {
+                    getRoute(); // Fetch the route when two stops are selected
+                }
+            }
+        }
+
+        var routeLine = null; // Initialize routeLine as null
+
+function getRoute() {
+    var origin = selectedStops[0];
+    var destination = selectedStops[1];
+    var url = `/calculate_route?origin=${origin.lng},${origin.lat}&destination=${destination.lng},${destination.lat}`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            if (data.error) {
+                alert(data.error);
+            } else {
+                // Update the distance on the page
+                document.getElementById('distance').textContent = data.distance_km;
+
+                // Update the carbon footprint
+                updateCarbonFootprint(data.distance_km);
+
+                // Display the route using the geometry
+                displayRoute(data.route_geometry);  
+            }
+        })
+        .catch(error => {
+            console.error("Error fetching route:", error);
+        });
+}
+
+// Display the route line on the map
+function displayRoute(routeGeometry) {
+    // If there's an existing route, remove it
+    if (routeLine) {
+        map.removeLayer(routeLine);
+    }
+
+    // Create a polyline for the new route
+    routeLine = L.polyline(routeGeometry, { color: 'blue', weight: 4, opacity: 0.7 }).addTo(map);
+    
+    // Adjust map bounds to fit the route
+    map.fitBounds(routeLine.getBounds());
+
+    // Show the Refresh Button
+    document.getElementById('refresh_button').style.display = 'block';
+}
+
+
+
+        // Calculate the carbon footprint
+        function updateCarbonFootprint() {
+            var distance_km = parseFloat(document.getElementById('distance').textContent);
+            var num_passengers = document.getElementById('num_passengers').value;
+
+            if (!distance_km || !num_passengers) {
+                return;  // Don't do anything if distance or passengers are not available
+            }
+
+            var url = `/calculate_carbon_footprint?distance_km=${distance_km}&num_passengers=${num_passengers}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('bus_emissions').textContent = data.bus_emissions;
+                    document.getElementById('car_emissions').textContent = data.car_emissions;
+                    document.getElementById('emissions_saved').textContent = data.emissions_saved;
+                })
+                .catch(error => {
+                    console.error("Error calculating carbon footprint:", error);
+                });
+        }
+
+        // Reset the selection when the Refresh Button is clicked
+        function resetSelection() {
+            selectedStops = []; // Clear the selected stops
+            if (routeLine) {
+                map.removeLayer(routeLine);
+                  // Remove the existing route line
+            }
+
+            document.getElementById('distance').textContent = '--';
+            document.getElementById('bus_emissions').textContent = '--';
+            document.getElementById('car_emissions').textContent = '--';
+            document.getElementById('emissions_saved').textContent = '--';
+
+            document.getElementById('refresh_button').style.display = 'none';  // Hide the refresh button
+
+            setTimeout(function() {
+        location.reload(); // This will refresh the page
+    }, 500);
+            // Allow the user to select two new stops
+        }
+    </script>
+</body>
+</html>

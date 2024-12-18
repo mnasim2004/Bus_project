@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivandrum Stops Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Trivandrum Stops Map</h1>
+    <div id="map" style="height: 600px; width: 100%;"></div>
+    <h3 id="distance">Select two stops to calculate the distance.</h3>
+    
+    <script>
+        var map = L.map('map').setView([8.5241, 76.9366], 12); // Center on Trivandrum
+        
+        // Add OpenStreetMap tile layer
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        
+        // Your stops data (replace this with the actual stop data)
+        var stops = [
+            { name: "Stop 1", lat: 8.4883, lng: 76.9516 },
+            { name: "Stop 2", lat: 8.4900, lng: 76.9520 },
+            // Add all your stops here
+        ];
+        
+        // Add markers for stops
+        var selectedStops = [];
+        stops.forEach(function(stop) {
+            L.marker([stop.lat, stop.lng])
+                .addTo(map)
+                .bindPopup(stop.name)
+                .on('click', function() {
+                    selectStop(stop);
+                });
+        });
+        
+        // Function to handle stop selection
+        function selectStop(stop) {
+            selectedStops.push(stop);
+
+            if (selectedStops.length === 2) {
+                // Once two stops are selected, calculate the distance
+                var origin = selectedStops[0];
+                var destination = selectedStops[1];
+
+                // Call the Flask API to calculate the route
+                fetch(`/calculate_route?origin=${origin.lat},${origin.lng}&destination=${destination.lat},${destination.lng}`)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.distance) {
+                            // Update the distance on the webpage
+                            document.getElementById('distance').textContent = `Distance: ${data.distance} km`;
+
+                            // Draw the route on the map
+                            var routeCoords = data.coordinates.map(function(coord) {
+                                return [coord[1], coord[0]]; // Convert to [lat, lng] for Leaflet
+                            });
+                            L.polyline(routeCoords, { color: 'blue' }).addTo(map);
+                        } else {
+                            alert("Error: " + data.error);
+                        }
+
+                        // Reset selected stops
+                        selectedStops = [];
+                    })
+                    .catch(error => {
+                        console.error("Error:", error);
+                        alert("An error occurred while calculating the route.");
+                    });
+            }
+        }
+    </script>
+</body>
+</html>
